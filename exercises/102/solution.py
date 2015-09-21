@@ -60,6 +60,6 @@ def check_my_city(city_name):
     else:
         return stations
 
-
+"""
 print(check_my_city("Bagnolet"))
-
+"""
