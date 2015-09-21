@@ -11,7 +11,7 @@ def love_meet(bob, alice):
     for i in set(bob):
         if i in alice:
             love.append(i)
-    return sorted(love)
+    return sorted(set(love))
 
 
 def affair_meet(bob, alice, silvester):
@@ -19,7 +19,7 @@ def affair_meet(bob, alice, silvester):
     for i in set(alice):
         if (i in silvester and i not in bob):
             affair.append(i)
-    return sorted(affair)
+    return sorted(set(affair))
 
 """
 alice = ['II', 'IV', 'II', 'XIX', 'XV', 'IV', 'II']
@@ -29,7 +29,7 @@ love = []
 for i in set(bob):
     if i in alice:
         love.append(i)
-print(love)
+print(set(love))
 """
 """
 alice = ['II', 'IV', 'II', 'XIX', 'XV', 'IV', 'II']
@@ -40,5 +40,5 @@ affair = []
 for i in set(alice):
     if (i in silvester and i not in bob):
         affair.append(i)
-print(sorted(affair))
+print(sorted(set(affair)))
 """
