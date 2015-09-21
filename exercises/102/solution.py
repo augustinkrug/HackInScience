@@ -52,7 +52,7 @@ velib = [
 def check_my_city(city_name):
     stations = {"stations_nb": 0, "zip_code": [], "city": city_name}
     for i in range(0, len(velib)):
-        if city_name == velib[i]['city']:
+        if city_name.upper() == velib[i]['city']:
             stations["stations_nb"] = stations["stations_nb"] + 1
             stations["zip_code"].append(velib[i]["zip"])
     if stations["stations_nb"] == 0:
