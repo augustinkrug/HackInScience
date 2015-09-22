@@ -10,7 +10,7 @@ from is_prime import is_prime
 somme = 0
 
 for i in range(1, 1000):
-    if is_prime(i) == True:
+    if is_prime(i):
         somme = somme + i
 
 print(somme)
