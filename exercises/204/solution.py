@@ -9,6 +9,8 @@ Created on Tue Sep 22 13:33:07 2015
 def perfect_shuffle(deck):
     shuffle = []
     half = len(deck) // 2
+    if len(deck) < 3:
+        return deck
     for i in range(0, half - 1):
         shuffle.append(deck[i])
         shuffle.append(deck[i + half])
@@ -19,6 +21,6 @@ def perfect_shuffle(deck):
     return shuffle
 
 """
-deck = [1, 2, 3, 4]
+deck = [0, 1]
 print(perfect_shuffle(deck))
 """
