@@ -7,4 +7,4 @@ Created on Tue Sep 22 13:33:07 2015
 
 
 def starts_with(haystack, needle):
-    return input.startswith(needle)
+    return haystack.startswith(needle)
