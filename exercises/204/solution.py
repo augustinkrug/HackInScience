@@ -12,9 +12,10 @@ def perfect_shuffle(deck):
     for i in range(0, half - 1):
         shuffle.append(deck[i])
         shuffle.append(deck[i + half])
-    shuffle.append(deck[half-1])
-    if len(deck) % 2 == 0:
-        shuffle.append(deck[len(deck)-1])
+    if len(deck) > 2:
+        shuffle.append(deck[half-1])
+        if len(deck) % 2 == 0:
+            shuffle.append(deck[len(deck)-1])
     return shuffle
 
 """
