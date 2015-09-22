@@ -9,12 +9,11 @@ from requests import get
 
 try:
     r = get('http://mdk.fr/ip')
+    text = r.text
+    for i in range(len(r.text)):
+        if text[i] == "\n":
+            text = text[:i]
+            print(text)
+            break
 except:
     print("No internet connectivity.")
-
-text = r.text
-for i in range(len(r.text)):
-    if text[i] == "\n":
-        text = text[:i]
-        print(text)
-        break
