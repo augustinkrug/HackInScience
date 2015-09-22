@@ -16,10 +16,11 @@ def select_student(my_class, mark):
         else:
             rejected.append(my_class[i])
     return {'Accepted': sorted(accepted, reverse=True, key=itemgetter(1)),
-            'Rejected': sorted(rejected, key=itemgetter(1))}
+            'Refused': sorted(rejected, key=itemgetter(1))}
 
 """
 my_class = [['Kermit Wade', 27], ['Hattie Schleusner', 67],
             ['Ben Ball', 5], ['William Lee', 2]]
 print(select_student(my_class, 20))
+print(select_student(my_class, 50))
 """
