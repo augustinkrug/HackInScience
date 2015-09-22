@@ -8,7 +8,7 @@ from sys import argv
 
 
 try:
-    if len(argv) == 1:
+    if len(argv) < 4:
         print("usage: ./solution.py a_number (an_operator +-*/%^) a_number")
     elif (argv(1) is int and argv(3) is int):
         if argv(2) == "+":
