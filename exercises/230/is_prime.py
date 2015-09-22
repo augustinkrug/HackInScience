@@ -5,6 +5,8 @@ Created on Mon Sep 21 11:25:08 2015
 @author: A.KRUG
 """
 
+from math import sqrt
+
 
 def is_prime(num):
     if num < 2:
@@ -12,7 +14,7 @@ def is_prime(num):
     elif num % 2 == 0:
         return False
     else:
-        for i in range(3, num, 2):
+        for i in range(3, int(sqrt(num)), 2):
             if num % i == 0:
                 return False
     return True
