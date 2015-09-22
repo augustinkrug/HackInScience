@@ -26,8 +26,9 @@ def opt_euclidean(a, b):
 def np_euclidean(a, b):
     x = 0
     for i in range(0, len(a)):
-        x = x + np.power(b[i]-a[i], 2)
+        x = x + np.power(np.subtract(b[i], a[i]), 2)
     return np.power(x, .5)
+
 
 """
 a = [2,3,7,3,4,0,8,2,1]
