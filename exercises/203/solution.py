@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Sep 21 11:25:08 2015
+Created on Tue Sep 22 13:33:07 2015
 
 @author: A.KRUG
 """
 
 
-def is_alpha(input):
-    return input.isalpha()
+def is_multiple(a, b):
+    if a % b == 0:
+        return True
+    else:
+        return False
