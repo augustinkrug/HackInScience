@@ -19,7 +19,7 @@ def calc(a, op, b):
     elif op == "%":
         print(a % b)
     elif op == "^":
-        print(a ^ b)
+        print(pow(a, b))
 
 if len(argv) < 4:
     print("usage: ./solution.py a_number (an_operator +-*/%^) a_number")
