@@ -6,5 +6,5 @@ Created on Tue Sep 22 13:33:07 2015
 """
 
 w = open("words.txt")
-
-w.read()
+for line in w:
+    print(line, end='')
