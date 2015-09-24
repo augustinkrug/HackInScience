@@ -27,5 +27,5 @@ for n in stations:
             break
 
 soluce = open('solution.json', 'w')
-soluce.write(str(stations))
+soluce.write(json.dumps(stations))
 soluce.close()
