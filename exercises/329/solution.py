@@ -27,10 +27,23 @@ nb = ("73167176531330624919225119674426574742355349194934"
       "05886116467109405077541002256983155200055935729725"
       "71636269561882670428252483600823257530420752963450")
 
+result = ["", 0]
+for i in range(0, len(nb)-12):
+    seq = nb[i: i + 13]
+    prod = 1
+    for j in seq:
+        prod = prod * int(j)
+    if prod > result[1]:
+        result = [seq, prod]
+
+print(result[1])
+
 """
 nb = ("73167176531330624919225119674426574742355349194934")
 """
-
+"""
+# Algorythme hors sujet permettant de trouver la 13ème séquence de 4 chiffres
+# dont le produit est le plus grand
 result = []
 for i in range(0, len(nb)-3):
     seq = nb[i: i + 4]
@@ -45,3 +58,4 @@ for i in range(0, len(nb)-3):
         del result[13]
 
 print(result[12][1])
+"""
