@@ -7,8 +7,8 @@ Created on Tue Sep 22 13:33:07 2015
 
 
 def mul(l):
-    if len(l) == 1:
-        return l[0]
+    # if len(l) == 1:
+        # return l[0]
     result = 1
     for i in l:
         result = result * i
