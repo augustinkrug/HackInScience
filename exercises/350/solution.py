@@ -114,5 +114,7 @@ def decode(data):
         return de_dict(data)
 
 """
-print(encode({b'a': b'boo'}))
+z = {b'bar': b'spam', b'foo': [{'ez': b'rty'}, 32]}
+print(z)
+print(decode(encode(z)))
 """
