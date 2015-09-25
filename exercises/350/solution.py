@@ -24,7 +24,7 @@ def en_list(l):
 def en_dict(d):
     code = "d"
     for n in sorted(d.keys()):
-        code = code + encode(d[n])
+        code = code + encode(n) + encode(d[n])
     return code + "e"
 
 
@@ -112,3 +112,7 @@ def decode(data):
         return de_list(data)
     elif data[0] == "d":
         return de_dict(data)
+
+"""
+print(encode({b'a': b'boo'}))
+"""
