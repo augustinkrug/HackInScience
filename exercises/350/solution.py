@@ -27,6 +27,7 @@ def en_dict(d):
         code = code + encode(d[n])
     return code + "e"
 
+
 def encode(data):
     if type(data) == int:
         return en_int(data)
@@ -84,7 +85,7 @@ def de_dict(d):
     while data[0] != "e":
         x = decode(data)
         if type(x) == list:
-            X =  x[0]
+            X = x[0]
             data = x[1]
         else:
             X = x
@@ -111,13 +112,3 @@ def decode(data):
         return de_list(data)
     elif data[0] == "d":
         return de_dict(data)
-
-#print(de_bytes("10:32dddddddd"))
-#print(decode("li32eli50ei60eee"))
-print(decode("d3:bar4:spam3:fooi42ee"))
-
-"""
-print(encode({"re": b'56', 'b': 65}))
-print(encode(564))
-print(encode([2, 3, b'5hr', [32, 98]]))
-"""
