@@ -113,8 +113,8 @@ def decode(data):
     elif data[0] == "d":
         return de_dict(data)
 
-"""
-z = {b'bar': b'spam', b'foo': [{'ez': b'rty'}, 32]}
+
+z = {b'bar': b'spam', b'foo': [{b'ez': b'rty'}, 32]}
 print(z)
+print(encode(z))
 print(decode(encode(z)))
-"""
