@@ -26,8 +26,8 @@ def best_change(amout, coins):
 
 def changes(amout, coins):
     coins = tuple(sorted(coins, reverse=True))
-    count = 0
-    count_init = -1
+    count = 1
+    count_init = 0
     change = [amout]
     while count_init != count:
         # print(change)
